@@ -6,7 +6,6 @@ function._construct = function(nb){
 }
 
 enleveAllumette: function(){
-  
 }
 
 this._contruct();

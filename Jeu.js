@@ -1,11 +1,10 @@
-creationJoueur: function(){
-var balisP = document.createElement("p");
+var balisLi = document.createElement("li");
+var bouton = document.querySelector('button');
 var input = document.querySelector('body input');
-var form = document.querySelector('form');
-var name = input.value;
-input.onchange = function(){
-  balisP.innerHTML=name;
-  form.prepend(balisP);
+var ul = document.querySelector('#nameJoueur');
+var name;
+bouton.onclick = function(){
+  name = input.value;
+  ul.appendChild(balisLi);
 }
-}
-}
+  balisLi.innerHTML=name;
