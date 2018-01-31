@@ -5,22 +5,50 @@
 	<title>Mon premier Test</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css?t123">
+	<style>
+        .red {
+            background-color: #F00;
+        }
+        .green {
+            background-color: #0F0;
+        }
+    </style>
 </head>
 <body>
 	<h1  class="alert alert-info title">Allumette</h1>
 	<div class="bloc2">
-	<!-- <form method="post" class="formulaire"> -->
-		<!-- <button type="submit" class="btn btn-outline-primary" value="5" name="return">Retour</button> -->
 		<label for="input1"></label>
 		<input class="form-control inputTXT" type="text" name="research" placeholder="Entrer votre nom">
-		<button type="submit" class="btn btn-outline-primary " >Envoyer</button>
-		<input class="form-control enterKeys" type="number" name="keys" placeholder="Entrer nombre d'alumette en enlevé">
-	<!-- </form> -->
-	<div class="blocInput">
-		<ul id="nameJoueur"></ul>
+		<button type="submit" class="btn btn-outline-primary" >Valider</button>
+		<div class="blocInput">
+			<ul id="nameJoueur"></ul>
+		</div>
+			<label for="nb" class="labelNb">Nombre d'allumette dans la boite</label>
+			<div class=" nbAllumette">
+			<input class="form-control enterKeys" type="number" id="nb" name="nb" placeholder="Nombre d'allumette dans la boite" value="10" min="0" max="80" >
+			<button type="submit" class="btn btn-outline-primary " id="boutonLancerPartie">Lancer la partie</button>
+		</div>
+		<div class="ChoixAllumette">
+			<p class="ChoixAllumette2">Choix des allumettes à enlever</p>
+			<label for="nb-1">
+					<input class="radio" type="radio" id="nb-1" value="1" name="allumette" >
+				1
+			</label>
+
+			<label for="nb-2">
+					<input class="radio" type="radio" id="nb-2" value="2" name="allumette" >
+				2
+			</label>
+
+			<label for="nb-3">
+					<input class="radio" type="radio" id="nb-3" value="3" name="allumette" >
+				3
+			</label>
+
+			<button type="submit" class="btn btn-outline-primary boutonAllumette" >Enlever</button>
+		</div>
 	</div>
-	</div>
-<script src="Jeu.js"></script>
 <script src="Entite.js"></script>
+<script src="Jeu.js"></script>
 </body>
 </html>

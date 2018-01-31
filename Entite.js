@@ -1,21 +1,26 @@
-function BoiteAllumette() {
-  this.nombreAllumette;
+function BoiteAllumette(initialisationAllumette) {
+  if (initialisationAllumette < 0 || initialisationAllumette > 80 ) {
+    initialisationAllumette =0;
+    inputAllumette.value = initialisationAllumette;
+    alert("Le minimum dans la boite et de 0 ou 80 maxi");
+  }
+  this.nombreAllumette = initialisationAllumette;
 
-function._construct = function(nb){
-  this.nombreAllumette = nb;
+this.enleverAllumette = function(nb){
+  this.nombreAllumette = this.nombreAllumette - nb;
+  if (this.nombreAllumette <=0) {
+    alert("Vous avez perdu " +name +"!");
+  }
 }
 
-enleveAllumette: function(){
+this.boiteVide = function(){
+  return this.nombreAllumette == 0;
 }
 
-this._contruct();
 }
 
-function Joueur() {
-  this.alias;
-
-this._contruct = function(alias){
-  this.alias = alias;
+function Joueur(name) {
+  this.alias = name;
 }
 
 function Bot(){
