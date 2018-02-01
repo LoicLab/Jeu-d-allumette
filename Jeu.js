@@ -31,13 +31,18 @@ boutonPartie.onclick = function(){
 var boutonAllumette = document.querySelector(".boutonAllumette");
 boutonAllumette.onclick = function(){
   var nombreAllumetteChoisi = document.querySelector("input:checked");
-  if (nombreAllumetteChoisi == null) {
+  if (nombreAllumetteChoisi == null ) {
     alert("Choisir un chiffre !");
   }
-  var nb = nombreAllumetteChoisi.value;
-  boite.enleverAllumette(nb);
-  inputAllumette.value = boite.nombreAllumette;
-  Tour();
+  if (nombreAllumetteChoisi.value < 1 || nombreAllumetteChoisi.value >3) {
+    alert("Ne pas tricher !");
+  } else {
+    console.log(nombreAllumetteChoisi);
+    var nb = nombreAllumetteChoisi.value;
+    boite.enleverAllumette(nb);
+    inputAllumette.value = boite.nombreAllumette;
+    Tour();
+  }
 }
 
 function Tour(){

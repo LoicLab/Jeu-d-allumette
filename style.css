@@ -64,3 +64,10 @@
 .boutonAllumette{
 	margin: 0px 0px 0px 60px
 }
+
+.red {
+		background-color: #F00;
+}
+.green {
+		background-color: #0F0;
+}

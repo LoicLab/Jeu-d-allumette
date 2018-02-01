@@ -6,16 +6,16 @@ function BoiteAllumette(initialisationAllumette) {
   }
   this.nombreAllumette = initialisationAllumette;
 
-this.enleverAllumette = function(nb){
-  this.nombreAllumette = this.nombreAllumette - nb;
-  if (this.nombreAllumette <=0) {
-    alert("Vous avez perdu " +name +"!");
+  this.enleverAllumette = function(nb){
+    this.nombreAllumette = this.nombreAllumette - nb;
+    if (this.nombreAllumette <=0) {
+      alert("Vous avez perdu " +name +"!");
+    }
   }
-}
 
-this.boiteVide = function(){
-  return this.nombreAllumette == 0;
-}
+  this.boiteVide = function(){
+    return this.nombreAllumette == 0;
+  }
 
 }
 
