@@ -9,22 +9,21 @@ function BoiteAllumette(initialisationAllumette) {
   this.enleverAllumette = function(nb){
     this.nombreAllumette = this.nombreAllumette - nb;
     if (this.nombreAllumette <=0) {
-      alert("Vous avez perdu " +name +"!");
+      this.nombreAllumette =0;
     }
   }
 
   this.boiteVide = function(){
-    return this.nombreAllumette == 0;
+    return this.nombreAllumette <= 0;
   }
-
 }
 
 function Joueur(name) {
   this.alias = name;
-}
+  }
 
-function Bot(){
-this._construct = function(nbAllumette){
-  nbAllumette = math.random(1,3);
-}
-}
+// function Bot(){
+// this._construct = function(nbAllumette){
+//   nbAllumette = math.random(1,3);
+// }
+// }

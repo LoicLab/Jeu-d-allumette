@@ -3,17 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bienvenue sur le jeu des allumettes</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet"
+				href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css?t123">
 </head>
 <body>
 	<h1  class="alert alert-info title">Jeu des Allumettes</h1>
-	<div class="bloc2">
-		<label for="input1"></label>
-		<input class="form-control inputTXT" type="text" name="research" placeholder="Entrer votre nom">
+	<div class="bloc2 container">
+		<label for="input1" class="styleTitre">Liste des joueurs</label>
+		<input class="form-control inputTXT" type="text" id="input1" placeholder="Entrer votre nom">
 		<button type="submit" class="btn btn-outline-primary" >Valider</button>
-		<div class="blocInput">
-			<ul id="nameJoueur"></ul>
+		<div class="card blocInput" style="width: 18rem;">
+			  <!-- <div class="card-header">
+				</div> -->
+			<ul id="nameJoueur" class="list-group list-group-flush"></ul>
 		</div>
 			<label for="nb" class="labelNb">Nombre d'allumette dans la boite</label>
 			<div class=" nbAllumette">
@@ -22,7 +25,6 @@
 		</div>
 		<div class="ChoixAllumette">
 			<p class="ChoixAllumette2">Choix des allumettes à enlever</p>
-
 			<div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary" for="nb-1">
     <input type="radio"  id="nb-1" autocomplete="off"  name="allumette" value="1">
@@ -36,14 +38,15 @@
     <input type="radio"  id="nb-3" autocomplete="off" name="allumette" value="3">
 			3
   </label>
-</div>
-			<button type="submit" class="btn btn-outline-primary boutonAllumette" >Enlever</button>
+	</div>
+			<button type="submit" class="btn btn-outline-primary boutonAllumette"  >Enlever</button>
 		</div>
 	</div>
 <script src="Entite.js"></script>
-<script src="Jeu.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="Config.js"></script>
+<script src="Engine.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 </body>
 </html>

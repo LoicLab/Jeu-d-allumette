@@ -1,3 +1,6 @@
+.styleTitre, .blocInput {
+	display: flex;
+}
 .title{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
@@ -19,24 +22,19 @@
 	display:block;
 }
 
-.blocInput{
-	display: flex;
-}
-
 .enterKeys{
 	width: 25%;
-	margin:0px 10px 0px 10px;
+	margin:0px 10px 0px 0px;
 }
 
 .labelNb{
 	display: block;
-	margin-left: 12px;
 }
 
 .inputTXT{
 	display: inline-block;
 	width: 50%;
-	margin:0px 10px 0px 10px;
+	margin-right: 10px;
 }
 
 .Text{
@@ -50,19 +48,20 @@
 }
 
 .radio{
-	margin: 10px 10px 0px 10px;
+	margin: 10px 10px 0px 0px;
 }
 
 .ChoixAllumette{
-	margin: 10px 0px 0px 12px;
+	margin-top: 10px;
+	display: none;
 }
 
 .ChoixAllumette2{
-	margin: 20px 0px 0px 0px;
+	margin: 20px 0px 15px 0px;
 }
 
 .boutonAllumette{
-	margin: 0px 0px 0px 60px
+	margin-left: 60px;
 }
 
 .red {
@@ -70,4 +69,8 @@
 }
 .green {
 		background-color: #0F0;
+}
+
+ul{
+	list-style: none;
 }
